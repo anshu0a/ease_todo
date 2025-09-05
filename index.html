@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="root">
+        <h1>ToDo List App</h1>
+        <div class="main">
+            <div class="indiv">
+                <input type="text" placeholder="Enter your task" class="inp">
+                <div onkeydown="keyDwn(ele)" onClick="addTask()" class="btn">Add</div>
+            </div>
+            <div class="cnt">
+                <div style="display: none;" class="one onee">
+                    <p class="dtl"></p>
+                    <img src="./img/read.svg" onClick="readTask(this)" class="read">
+                    <img src="./img/del.svg" onClick="delTask(this)" class="del">
+                </img>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
